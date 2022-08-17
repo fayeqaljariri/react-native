@@ -20,7 +20,6 @@ export default function App() {
       const response = await fetch('https://reactnative.dev/movies.json');
       const json = await response.json();
       setData(json.movies);
-      console.log(typeof json.movies[0].id);
     } catch (error) {
       console.error(error);
     } finally {
